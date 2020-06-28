@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+:root {
+
+    // colors
+
+    // *-ligher and *-darker varients are computed via javascript.
+    --primary: #547fff;       --primary-lighter: white;       --primary-darker: white;
+    --secondary: #798892;     --secondary-lighter: white;     --secondary-darker: white;
+    --success: #3abf94;       --success-lighter: white;       --success-darker: white;
+    --info: #9964e3;          --info-lighter: white;          --info-darker: white;
+    
+    --warning: #ffc247;       --warning-lighter: white;       --warning-darker: white;
+    --warning: #fb6340;
+    
+    --danger: #f55d5d;        --danger-lighter: white;        --danger-darker: white;
+    --danger: #f5365c;
+
+    --light: #f8f9fa;         --light-lighter: white;         --light-darker: white;
+
+    --dark: #495057;          --dark-lighter: white;          --dark-darker: white;
+    --dark: #313947;
+    
+        
+    --main-background-color: #f9fbfd;
+
+    
+    // Font Variables
+    // =================================
+    --h1-font-size: 28px;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+    --h4-font-size: 18px;
+    --h5-font-size: 16px;
+    --h6-font-size: 14px;
+    --default-font-size: 14px;
+    
+    // blockquote
+    --block-quote-indent: 20px;
+    --block-quote-left-border-color: #f55d5d;
+
+    // // button colors variables
+    // --button-primary: var(--primary); --button-outline-primary: var(--primary-darker);
+    // --button-secondary: #798892;    --button-outline-secondary: #798892;
+    // --button-info: #9964e3;         --button-outline-info: #9964e3;
+    // --button-success: #3abf94;      --button-outline-success: #3abf94;
+    // --button-warning: #ffc247;      --button-outline-warning: #ffc247;
+    // --button-danger: #f55d5d;       --button-outline-danger: #f55d5d;
+    // --button-gray: #f8f9fa;         --button-outline-gray: #e5e5e5;
+    // --button-inverse: #495057;      --button-outline-inverse: #495057;
+}
+
+html, body { height: 100%; padding: 0px; margin: 0px; }
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--default-font-size);
+    background-color: var(--main-background-color);
+}
+
+.page-container
+{
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@import './basscss.min.css';
+@import './icons.scss';
+@import './typography.scss';
+@import './buttons.scss';
+@import './card.scss';
+@import './navbar.scss';
+@import './dropdown.scss';
+@import './list-group.scss';

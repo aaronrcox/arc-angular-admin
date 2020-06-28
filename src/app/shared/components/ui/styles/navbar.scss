@@ -1,0 +1,80 @@
+
+/* Style the navigation bar */
+.navbar {
+    
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+
+    background: var(--light);
+    border: 0px solid var(--light-darker);
+    color: var(--dark);
+
+    &.primary   { background: var(--primary);      border-color: var(--primary-darker);      color: var(--light);}
+    &.secondary { background: var(--secondary);    border-color: var(--secondary-darker);    color: var(--light);}
+    &.info      { background: var(--info);         border-color: var(--info-darker);         color: var(--light);}
+    &.success   { background: var(--success);      border-color: var(--success-darker);      color: var(--light);}
+    &.warning   { background: var(--warning);      border-color: var(--warning-darker);      color: var(--light);}
+    &.danger    { background: var(--danger);       border-color: var(--danger-darker);       color: var(--light);}
+    &.light     { background: var(--light);        border-color: var(--light-darker);        color: var(--dark); }
+    &.dark      { background: var(--dark);         border-color: var(--dark-darker);         color: var(--light);}
+
+    &.sm {
+        height: 40px;
+        font-size: smaller;
+    }
+
+    .navbrand {
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px;
+    }
+
+    .navicon {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    > .navlink {
+        
+        padding: 10px;
+        color: inherit;
+        text-align: center;
+        text-decoration: none;
+                
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            font-size: 1rem;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: -3px;
+        }
+    }
+
+    .navitem-grow {
+        flex: 1;
+    }
+
+    .hover:hover {
+        background: var(--light-darker);
+    }
+
+    &.primary .hover:hover   { background: var(--primary-darker);      }
+    &.secondary .hover:hover { background: var(--secondary-darker);    }
+    &.info .hover:hover      { background: var(--info-darker);         }
+    &.success .hover:hover   { background: var(--success-darker);      }
+    &.warning .hover:hover   { background: var(--warning-darker);      }
+    &.danger .hover:hover    { background: var(--danger-darker);       }
+    &.light .hover:hover     { background: var(--light-darker);        }
+    &.dark .hover:hover      { background: var(--dark-darker);         }
+
+}

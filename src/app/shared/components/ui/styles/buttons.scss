@@ -1,0 +1,87 @@
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+
+    background: var(--light);
+    // box-shadow: inset 0px 0px 0px 1px var(--light-darker); 
+    color: var(--dark);
+    
+    border: 1px solid var(--light-darker);
+    //border-radius: 3px;
+
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    
+    &.primary   { background: var(--primary);   border-color: var(--primary-darker);/*  box-shadow: inset 0px 0px 0px 1px var(--primary-darker);  */  color: var(--light);     }
+    &.secondary { background: var(--secondary); border-color: var(--secondary-darker);/*  box-shadow: inset 0px 0px 0px 1px var(--secondary-darker);*/  color: var(--light);     }
+    &.info      { background: var(--info);      border-color: var(--info-darker);/*  box-shadow: inset 0px 0px 0px 1px var(--info-darker);     */  color: var(--light);     }
+    &.success   { background: var(--success);   border-color: var(--success-darker);/*  box-shadow: inset 0px 0px 0px 1px var(--success-darker);  */  color: var(--light);     }
+    &.warning   { background: var(--warning);   border-color: var(--warning-darker);/*  box-shadow: inset 0px 0px 0px 1px var(--warning-darker);  */  color: var(--light);     }
+    &.danger    { background: var(--danger);    border-color: var(--danger-darker);/*  box-shadow: inset 0px 0px 0px 1px var(--danger-darker);   */  color: var(--light);     }
+    &.light     { background: var(--light);     border-color: var(--light-darker);/*  box-shadow: inset 0px 0px 0px 1px var(--light-darker);    */  color: var(--dark);      }
+    &.dark      { background: var(--dark);      border-color: var(--dark-darker);/*  box-shadow: inset 0px 0px 0px 1px var(--dark-darker);     */  color: var(--light);     }
+
+    &:hover {
+
+        background: var(--light-darker);
+
+        &.primary   { background: var(--primary-darker);      }
+        &.secondary { background: var(--secondary-darker);    }
+        &.info      { background: var(--info-darker);         }
+        &.success   { background: var(--success-darker);      }
+        &.warning   { background: var(--warning-darker);      }
+        &.danger    { background: var(--danger-darker);       }
+        &.light     { background: var(--light-darker);        }
+        &.dark      { background: var(--dark-darker);         }
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.outline {
+        background: transparent;
+        border: 1px solid var(--light-darker);
+        
+        &.primary   { border-color: var(--primary-darker);     color: var(--primary);   }
+        &.secondary { border-color: var(--secondary-darker);     color: var(--secondary); }
+        &.info      { border-color: var(--info-darker);     color: var(--info);      }
+        &.success   { border-color: var(--success-darker);     color: var(--success)    }
+        &.warning   { border-color: var(--warning-darker);     color: var(--warning);   }
+        &.danger    { border-color: var(--danger-darker);     color: var(--danger);    }
+        &.light     { border-color: var(--light-darker);     color: var(--dark);      }
+        &.dark      { border-color: var(--dark-darker);     color: var(--dark);      }
+
+        &:hover     { 
+            
+            background: var(--light);
+            // box-shadow: inset 0px 0px 0px 1px var(--light-darker); 
+            color: var(--dark);
+            
+            &.primary   { background: var(--primary);     box-shadow: inset 0px 0px 0px 1px var(--primary-darker);    color: var(--light);     }
+            &.secondary { background: var(--secondary);   box-shadow: inset 0px 0px 0px 1px var(--secondary-darker);  color: var(--light);     }
+            &.info      { background: var(--info);        box-shadow: inset 0px 0px 0px 1px var(--info-darker);       color: var(--light);     }
+            &.success   { background: var(--success);     box-shadow: inset 0px 0px 0px 1px var(--success-darker);    color: var(--light);     }
+            &.warning   { background: var(--warning);     box-shadow: inset 0px 0px 0px 1px var(--warning-darker);    color: var(--light);     }
+            &.danger    { background: var(--danger);      box-shadow: inset 0px 0px 0px 1px var(--danger-darker);     color: var(--light);     }
+            &.light     { background: var(--light);       box-shadow: inset 0px 0px 0px 1px var(--light-darker);      color: var(--dark);      }
+            &.dark      { background: var(--dark);        box-shadow: inset 0px 0px 0px 1px var(--dark-darker);       color: var(--light);     }
+        
+        }
+    }
+
+    &.sm { font-size: smaller; }
+    &.lg { font-size: larger;  }
+
+    &.block { display: block; width: 100%; }
+
+    > i {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 1rem;
+        margin-top: -3px;
+    }
+}
